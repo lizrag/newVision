@@ -1,0 +1,14 @@
+/*tituloServicios*/
+.tituloServicios {
+  text-align: center; }
+
+.parrafoClinica {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid aliceblue;
+  padding: 5em; }
+
+/*mapa y caja info*/
