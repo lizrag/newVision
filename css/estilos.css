@@ -1,14 +1,73 @@
-/*tituloServicios*/
-.tituloServicios {
-  text-align: center; }
+.fadeIn_h1, .fadeIn_p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
-.parrafoClinica {
-  font-style: normal;
-  font-weight: lighter;
-  font-size: medium;
-  font-family: sans-serif;
-  text-align: center;
-  border: 1px solid aliceblue;
-  padding: 5em; }
+/*mixins*/
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
-/*mapa y caja info*/
+/*variables*/
+/*clinica*/
+/*animaciones*/
+body {
+  padding: 0;
+  margin: 0; }
+
+header {
+  text-transform: uppercase; }
+  header_title {
+    text-transform: uppercase; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+.fadeIn_h1 {
+  color: #3f3697;
+  text-transform: uppercase;
+  animation: fadeIn;
+  animation-duration: 2s; }
+
+.fadeIn_p {
+  color: #3f3697;
+  text-transform: uppercase;
+  animation: fadeIn;
+  animation-duration: 2s; }
+
+header {
+  background-color: red; }
+
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%; }
+
+footer, .footer {
+  background-color: #F0EBCC;
+  position: absolute;
+  bottom: auto;
+  width: 100%; }
+
+footer_grupo, .footer_grupo {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  padding: 45px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+footer_grupo1_box3, .footer_grupo1_box3 {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px; }

@@ -1,0 +1,21 @@
+%flexboxRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*mixins*/
+@mixin fadeIn($animation,$duration){
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+

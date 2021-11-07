@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    @extend %heading;
+}
+
+
+.fadeIn{
+        &_h1{
+          color: $color-titulos;
+          text-transform: uppercase;
+          @extend %flexboxRow;
+          @include fadeIn(fadeIn,2s);
+        }
+        &_p{
+          color: $color-titulos;
+          text-transform: uppercase;
+          @extend %flexboxRow;
+          @include fadeIn(fadeIn,6s);
+        }
+      }  
+
+footer{
+  @extend %footer;
+  &_grupo{
+  @extend %grupo;
+  }
+  &_grupo1_box3{
+      @extend %box3;
+  }
+}

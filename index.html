@@ -4,50 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa dedicada a la atención personal y especializada para tu salud visual.">
+    <meta name="keywords" content="Oftamología, optometría, visión, armazones, míopia, astigmatismo, hipermetropía, salud, consultorio">
     <title>Nueva Visión</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c402c7298.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="grid">
-        <div class="text-focus-in">
-            <h1>Nueva Visión</h1>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Nueva Visión</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pag/clinica.html">Clínica</a>
                 </li>
-                <li>
-                    <a href="/pag/clinica.html">Clínica</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pag/contactanos.html">Contactanos</a>
                 </li>
-                <li>
-                    <a href="/pag/armazones.html">Armazones</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Optica
+                    </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pag/armazones.html">Armazones</a></li>
+                    <li><a class="dropdown-item" href="./pag/lentesDeContacto.html">Lentes de contacto</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="/pag/lentes de contacto.html de contacto.html">Lentes de contacto</a>
-                </li>
-                <li>
-                    <a href="/pag/contactanos.html">Contáctanos</a>
-                </li>
-            </ul>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
         </nav>
+        <section class="fadeIn">
+            <h1 class=fadeIn_h1>Nueva Visión</h1>
+            <p class=fadeIn_p>Se ve la diferencia </p>
+        </section>
     </header>
     <main>
         <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/img/Local.jpeg" class="d-block w-100" alt="Slide 1">
+                <img src="./img/local.jpeg" class="d-block w-100" alt="Local en Agua Prieta" loading="lazy">
             </div>
             <div class="carousel-item">
-                <img src="/img/letrero.jpeg" class="d-block w-100" alt="Slide 2">
+                <img src="./img/letrero.jpeg" class="d-block w-100" alt="Letrero con información de contacto" loading="lazy">
             </div>
             <div class="carousel-item">
-                <img src="/img/equipo.jpeg" class="d-block w-100" alt="Slide 3">
+                <img src="./img/equipo.jpeg" class="d-block w-100" alt="Integrantes del equipo" loading="lazy">
             </div>
             </div>
             <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
@@ -59,15 +73,13 @@
             <span class="visually-hidden">Next</span>
             </a>
         </div>
-        <!--Calendario-->
-        <img src="" alt="calendario">
     </main>  
     <footer class="footer">
         <div class="footer_grupo">
             <div class="footer_grupo_box1">
                 <figure> 
                     <a href="#">
-                        <img src="" alt="logo">
+                        <img src="./img/nv.png" alt="logo">
                     </a>
                 </figure>
             </div>
@@ -78,7 +90,7 @@
             <div class="footer_grupo1_box3">
                 <h2>SIGUENOS</h2>
                 <div class="footer_redSocial">
-                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-instagram" target="_blank" title="Acceso directo a nuestro perfil de Instagram"></a>
                 </div>
             </div>
         </div>

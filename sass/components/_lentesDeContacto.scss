@@ -1,0 +1,11 @@
+
+
+.footer{
+    @extend %footer;
+    &_grupo{
+    @extend %grupo;
+    }
+    &_grupo1_box3{
+        @extend %box3;
+    }
+}

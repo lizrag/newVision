@@ -232,7 +232,7 @@ list-style-type:square;
 
 /*mapa seccion contacto*/
 
-.flexContainer{
+.contactanos_flexContainer{
 
 display: flex;
 
@@ -242,7 +242,7 @@ margin-bottom: 5%;
 
 /*Caja de informacion*/
 
-.cajaInfo{
+.contactanos_flexContainer_informacion{
 
 padding-left: 20%;
 
@@ -340,16 +340,29 @@ margin-bottom: 20%;
 
 /*estilos card*/
 .card-group{
-    margin: 0 auto;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
     flex-direction: column;
-    width: 40%;
-    margin-bottom: 20%;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.20rem;
+    width: 100%;
+    height: 10%;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
 }
 
+/*estilos cuadricula de contactos*/
+.accesorios_contactos{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.accesorios_contactos img{
+    width: 400px;
+}
 /*estilos footer*/
 
 .footer {
@@ -388,7 +401,7 @@ height: 100%;
 
 }
 
-.footer_redSocial{
+.footer_grupo_box3{
 
 display: inline-block;
 
