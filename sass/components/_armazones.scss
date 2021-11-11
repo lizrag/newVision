@@ -1,22 +1,4 @@
 body{
     padding: 0;
     margin: 0;
-    @extend %heading;
-}
-
-header{
-  &_title{
-    text-transform: uppercase;
-  }
-  text-transform: uppercase;
-}
-
-footer{
-    @extend %footer;
-    &_grupo{
-    @extend %grupo;
-    }
-    &_grupo1_box3{
-        @extend %box3;
-    }
 }

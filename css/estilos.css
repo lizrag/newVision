@@ -1,9 +1,10 @@
-.fadeIn_h1, .fadeIn_p {
+.fadeIn_h1, .fadeIn_p, .contactanos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
 
+/*footer*/
 /*mixins*/
 @keyframes fadeIn {
   from {
@@ -14,14 +15,12 @@
 /*variables*/
 /*clinica*/
 /*animaciones*/
+.mainClinica {
+  background-color: orange; }
+
 body {
   padding: 0;
   margin: 0; }
-
-header {
-  text-transform: uppercase; }
-  header_title {
-    text-transform: uppercase; }
 
 body {
   padding: 0;
@@ -39,35 +38,53 @@ body {
   animation: fadeIn;
   animation-duration: 2s; }
 
+main h2 {
+  text-align: center; }
+
+main_accesorios {
+  display: flex;
+  flex-direction: row; }
+
+footer {
+  background-color: #f0ebcc;
+  display: flex;
+  justify-content: space-around; }
+
 header {
   background-color: red; }
 
-body {
-  background-color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100%; }
+.contactanos {
+  width: 40%;
+  background-color: teal;
+  margin-bottom: 20%;
+  margin-left: 30%;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px 0px; }
 
-footer, .footer {
-  background-color: #F0EBCC;
-  position: absolute;
-  bottom: auto;
-  width: 100%; }
+.seccionContacto_nombre_label {
+  display: block;
+  text-align: left; }
 
-footer_grupo, .footer_grupo {
+.seccionContacto form div input {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
-  padding: 45px 0px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%; }
+  margin-bottom: 10px; }
 
-footer_grupo1_box3, .footer_grupo1_box3 {
+form {
+  text-align: center; }
+
+form label {
   display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px; }
+  width: 60%;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+  background-color: teal; }
+
+form input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: turquoise;
+  padding: 0.4rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  cursor: pointer; }

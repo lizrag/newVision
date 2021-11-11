@@ -1,11 +1,19 @@
-
-
-.footer{
-    @extend %footer;
-    &_grupo{
-    @extend %grupo;
+main{
+    h2{
+        text-align: center;
     }
-    &_grupo1_box3{
-        @extend %box3;
-    }
+    &_accesorios{
+    display: flex;
+    flex-direction: row;
+} 
 }
+
+
+footer{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-around;
+}
+        
+    
+

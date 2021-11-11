@@ -5,6 +5,29 @@
     align-items: center;
 }
 
+/*footer*/
+%footer{
+  height: auto;
+  width: 100vw;
+  background-color: aqua;
+  }
+
+%footerContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+
+%lisContainer{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 3rem;
+  flex: 1 0 25rem;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+    
+
 /*mixins*/
 @mixin fadeIn($animation,$duration){
     animation: fadeIn;
