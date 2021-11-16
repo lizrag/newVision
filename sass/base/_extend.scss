@@ -42,3 +42,10 @@
     }
   }
 
+@mixin footer{
+  @media (max-width: 800px) {
+    footer {
+      flex-direction: column;
+    }
+  }
+}

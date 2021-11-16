@@ -2,3 +2,27 @@ body{
     padding: 0;
     margin: 0;
 }
+
+article{
+    background-color: $color-fondo;
+
+    h2{
+        text-align: center;
+    }
+}
+
+.container{
+    h3{
+        text-align: center;
+    }
+    div{
+        padding: 10px;
+        outline: 1px solid yellow;
+    }
+}
+
+footer{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,4 +1,4 @@
-.fadeIn_h1, .fadeIn_p, .contactanos {
+.fadeIn_h1, .fadeIn_p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -16,11 +16,35 @@
 /*clinica*/
 /*animaciones*/
 .mainClinica {
-  background-color: orange; }
+  background-color: #3d84b8; }
+  .mainClinica h2 {
+    text-align: center; }
+
+footer {
+  background-color: #f0ebcc;
+  display: flex;
+  justify-content: space-around; }
 
 body {
   padding: 0;
   margin: 0; }
+
+article {
+  background-color: #3d84b8; }
+  article h2 {
+    text-align: center; }
+
+.container h3 {
+  text-align: center; }
+
+.container div {
+  padding: 10px;
+  outline: 1px solid yellow; }
+
+footer {
+  background-color: #f0ebcc;
+  display: flex;
+  justify-content: space-around; }
 
 body {
   padding: 0;
@@ -38,53 +62,61 @@ body {
   animation: fadeIn;
   animation-duration: 2s; }
 
-main h2 {
-  text-align: center; }
-
-main_accesorios {
+footer {
+  background-color: #f0ebcc;
   display: flex;
-  flex-direction: row; }
+  justify-content: space-around; }
+
+.contactos {
+  background-color: #3d84b8; }
+  .contactos h2 {
+    text-align: center; }
+  .contactos p {
+    text-align: center; }
+
+.row {
+  display: flex; }
+
+.column {
+  flex: 33.33%;
+  padding: 5px; }
 
 footer {
   background-color: #f0ebcc;
   display: flex;
   justify-content: space-around; }
 
-header {
-  background-color: red; }
+/*estilos para mapa y la caja*/
+.contactanos h2 {
+  text-align: center;
+  background-color: #3d84b8; }
 
-.contactanos {
+.contactanos__mapa {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  box-sizing: content-box;
+  text-align: center;
+  flex-direction: row;
+  padding: 3em;
+  padding-left: 5%; }
+
+/*estilos para el form*/
+.seccionContacto {
   width: 40%;
   background-color: teal;
   margin-bottom: 20%;
   margin-left: 30%;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
-  box-shadow: 3px 3px 5px 0px; }
-
-.seccionContacto_nombre_label {
-  display: block;
-  text-align: left; }
-
-.seccionContacto form div input {
-  width: 100%;
-  margin-bottom: 10px; }
-
-form {
+  box-shadow: 3px 3px 5px 0px;
+  display: flex;
+  justify-content: center;
   text-align: center; }
-
-form label {
-  display: inline-block;
-  width: 60%;
-  color: white;
-  text-align: left;
-  font-weight: 600;
-  background-color: teal; }
-
-form input[type="submit"] {
-  margin-top: 1.5rem;
-  background-color: turquoise;
-  padding: 0.4rem;
-  font-weight: 600;
-  border-radius: 0.3rem;
-  cursor: pointer; }
+  .seccionContacto__label {
+    display: block;
+    text-align: center; }
+    .seccionContacto__label__input {
+      width: 100%;
+      margin-bottom: 10px; }

@@ -18,3 +18,9 @@ body{
           @include fadeIn(fadeIn,6s);
         }
       }  
+
+      footer{
+        background-color: $color-principal;
+        display: flex;
+        justify-content: space-around;
+    }
