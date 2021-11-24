@@ -12,6 +12,9 @@ article{
 }
 
 .container{
+    
+    overflow-x: hidden;
+
     h3{
         text-align: center;
     }
@@ -19,7 +22,15 @@ article{
         padding: 10px;
         outline: 1px solid yellow;
     }
+
+    @media only screen and (max-width: 900px){
+        .d-flex{
+            flex-direction: column;
+        }
+    }
+
 }
+
 
 footer{
     background-color: $color-principal;
@@ -27,7 +38,11 @@ footer{
     justify-content: space-around;
 
     @media only screen and (max-width: 900px){
-        display: flex;
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
     }
 }

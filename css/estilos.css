@@ -15,10 +15,22 @@
 /*variables*/
 /*clinica*/
 /*animaciones*/
+section .card-group {
+  margin-bottom: 30px; }
+
 .mainClinica {
-  background-color: #3d84b8; }
+  border: 5px solid #3d84b8;
+  height: 320px;
+  background-color: #3d84b8;
+  height: 80%; }
   .mainClinica h2 {
     text-align: center; }
+  .mainClinica p {
+    text-align: center;
+    margin-bottom: 50px; }
+
+section .card {
+  margin: 20px; }
 
 footer {
   background-color: #f0ebcc;
@@ -27,7 +39,11 @@ footer {
   @media only screen and (max-width: 900px) {
     footer {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: center;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
 body {
   padding: 0;
@@ -38,12 +54,16 @@ article {
   article h2 {
     text-align: center; }
 
-.container h3 {
-  text-align: center; }
-
-.container div {
-  padding: 10px;
-  outline: 1px solid yellow; }
+.container {
+  overflow-x: hidden; }
+  .container h3 {
+    text-align: center; }
+  .container div {
+    padding: 10px;
+    outline: 1px solid yellow; }
+  @media only screen and (max-width: 900px) {
+    .container .d-flex {
+      flex-direction: column; } }
 
 footer {
   background-color: #f0ebcc;
@@ -52,11 +72,20 @@ footer {
   @media only screen and (max-width: 900px) {
     footer {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: center;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
 body {
   padding: 0;
   margin: 0; }
+
+.carrusel {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: #3d84b8; }
 
 .fadeIn_h1 {
   color: #3f3697;
@@ -77,7 +106,14 @@ footer {
   @media only screen and (max-width: 900px) {
     footer {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: center;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+
+header {
+  background-color: #f0ebcc; }
 
 .contactos {
   background-color: #3d84b8; }
@@ -91,7 +127,9 @@ footer {
 
 .column {
   flex: 33.33%;
-  padding: 5px; }
+  padding: 5px;
+  padding-bottom: 30px;
+  overflow-x: hidden; }
   @media screen and (max-width: 500px) {
     .column .column {
       width: 100%; } }
@@ -100,15 +138,26 @@ footer {
   background-color: #f0ebcc;
   display: flex;
   justify-content: space-around; }
+  footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   @media only screen and (max-width: 900px) {
     footer {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: center;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
 /*estilos para mapa y la caja*/
-.contactanos h2 {
+.tituloContactanos {
   text-align: center;
   background-color: #3d84b8; }
+
+.contactanos h2 {
+  text-align: center; }
 
 .contactanos__mapa {
   flex-direction: row;
@@ -119,35 +168,55 @@ footer {
   text-align: center;
   flex-direction: row;
   padding: 3em;
-  padding-left: 5%; }
+  padding-left: 5%;
+  overflow-x: hidden; }
 
 /*estilos para el form*/
-.seccionContacto {
-  width: 40%;
-  background-color: teal;
-  margin-bottom: 20%;
-  margin-left: 30%;
-  padding: 1.5rem 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 3px 3px 5px 0px;
-  display: flex;
-  justify-content: center;
+.formularioContacto {
   text-align: center; }
-  .seccionContacto__label {
-    display: block;
-    text-align: center; }
-    .seccionContacto__label__input {
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #3d84b8; }
+
+.seccionContacto {
+  border-radius: 5px;
+  background-color: #3d84b8;
+  padding: 20px; }
+  @media screen and (max-width: 900px) {
+    .seccionContacto input[type=submit] {
       width: 100%;
-      margin-bottom: 10px; }
-  @media only screen and (max-width: 900px) {
-    .seccionContacto {
-      width: 50%; } }
+      margin-top: 0; } }
 
 footer {
   background-color: #f0ebcc;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px; }
   @media only screen and (max-width: 900px) {
     footer {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      text-align: center;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px; } }

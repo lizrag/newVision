@@ -1,5 +1,9 @@
+header{
+    background-color: $color-principal;
+}
 .contactos{
     background-color: $color-fondo;
+
     h2{
         text-align: center;
     }
@@ -15,6 +19,8 @@
 .column {
     flex: 33.33%;
     padding: 5px;
+    padding-bottom: 30px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 500px) {
         .column {
@@ -29,9 +35,19 @@ footer{
     display: flex;
     justify-content: space-around;
 
-    @media only screen and (max-width: 900px){
+    a{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 900px){
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
     }
 }
 

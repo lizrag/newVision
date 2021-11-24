@@ -1,7 +1,26 @@
+section{
+    .card-group{
+        margin-bottom: 30px; 
+    }
+}
+
 .mainClinica{
+    border: 5px solid $color-fondo;
+    height: 320px;
     background-color: $color-fondo;
+    height: 80%;
     h2{
         text-align: center;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+section{
+    .card{
+        margin: 20px;
     }
 }
 
@@ -11,7 +30,11 @@ footer{
     justify-content: space-around;
 
     @media only screen and (max-width: 900px){
-        display: flex;
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
     }
 }
